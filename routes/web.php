@@ -1,20 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers;
+use App\Http\Controllers\PageController;
 
-Route::get('/', function () {
-    return view('homepage');
-});
+Route::get('/', [PageController::class, 'home'])->name('homepage');
 
-Route::get('/chi-sono', function () {
-    return view('chi-sono');
-});
+Route::get('/chi-sono', [PageController::class, 'chisono'])->name('about');
 
-Route::get('/contatti', function () {
-    return view('contatti');
-});
+Route::get('/contatti', [PageController::class, 'contact'])->name('contact');
 
-Route::get('/lista-servizi', function () {
-    $services = ["Ecommerce", "Gestionali", "Consulenza", "Formazione"];
-    return view('lista-servizi', ['services' => $services]);
-});
+Route::get('/lista-servizi', [PageController::class, 'servizi'])->name('servizi');
+
+Route::get('/prodotti/{id}', )

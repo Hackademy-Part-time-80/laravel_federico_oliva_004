@@ -16,16 +16,16 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Homepage</a>
+          <a class="nav-link active" aria-current="page" href="{{route('homepage')}}">Homepage</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/chi-sono">Chi sono</a>
+          <a class="nav-link" href="{{Route(about)}}">Chi sono</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/contatti">Contatti</a>
+          <a class="nav-link" href="{{Route('contact')}}">Contatti</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/lista-servizi">Lista Servizi</a>
+          <a class="nav-link" href="{{Route('servizi')}}">Lista Servizi</a>
         </li>
       </ul>
     </div>
