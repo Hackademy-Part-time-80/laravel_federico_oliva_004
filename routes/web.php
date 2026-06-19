@@ -12,4 +12,4 @@ Route::get('/contatti', [PageController::class, 'contact'])->name('contact');
 
 Route::get('/lista-servizi', [PageController::class, 'servizi'])->name('servizi');
 
-Route::get('/prodotti/{servizio}', [PageController::class, 'show']);
+Route::get('/prodotti/{servizio}', [PageController::class, 'show'])->name('singprodotto');

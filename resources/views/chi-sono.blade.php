@@ -1,37 +1,10 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esercitazione 2 - Homepage</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">ESERCITAZIONE 2 Ch</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="/">Homepage</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="/chi-sono">Chi sono</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/contatti">Contatti</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/lista-servizi">Lista Servizi</a>
-        </li>
-      </ul>
-    </div>
+<x-layout title="Chi siamo">
+  <div>
+    <h1>
+      CHI SIAMO
+    </h1>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum natus architecto nesciunt eaque nulla voluptate placeat accusamus mollitia repellendus, maiores modi, atque laudantium. Similique, maxime ut temporibus ratione odit quasi consequuntur omnis ad consequatur cupiditate perspiciatis illum laudantium quos totam libero deleniti tempora et aliquid, dolor ab vero impedit possimus nesciunt adipisci. Harum ipsam omnis a laborum! Laboriosam asperiores ipsa nobis veniam atque similique provident aliquam accusantium eligendi quibusdam, necessitatibus aperiam dignissimos maxime vel eius enim. Similique sit obcaecati facilis eum delectus facere in reiciendis vero accusantium vel, itaque repellat error modi magnam quasi ipsam voluptatem nobis? Modi neque alias sequi illo ducimus a, odio repellendus quas, ipsum est consectetur. Obcaecati nesciunt tempore dolores sunt amet repellat sed cum explicabo, blanditiis quas officia laudantium voluptatem pariatur excepturi recusandae esse illo ipsa veritatis culpa, libero vero impedit! Aperiam fuga repellat maxime dolorum qui dolorem, corrupti deleniti perspiciatis, inventore voluptatum assumenda, beatae excepturi debitis quia ratione laudantium ad minima eaque aut. Dicta nemo obcaecati numquam repellat laboriosam optio dolores nostrum ab porro! Ducimus, laudantium reprehenderit nostrum mollitia nihil omnis consequatur at quasi, qui accusamus laborum incidunt dolorum ipsum minima ab culpa deleniti ad dolore magni sequi! Quibusdam iure modi necessitatibus dicta magnam.
+    </p>
   </div>
-</nav>
-    
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
-</html>
+</x-layout>

@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout title="Homepage">
   <div>
     <h1>
       QUESTA E' L'HOMEPAGE
