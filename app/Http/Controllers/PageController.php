@@ -15,9 +15,9 @@ class PageController extends Controller
     public function chisono(){
         return view('chi-sono');
     }
-    public function servizi($services){
+    public function servizi(){
         $services = ["Ecommerce", "Gestionali", "Consulenza", "Formazione"];
-        return view('lista-servizi', $services=['servizi' => $services]);
+        return view('lista-servizi', ['servizi' => $services]);
     }
     public function show($servizio){
         $services = ['ecommerce'  => 'Ecommerce','gestionali' => 'Gestionali','consulenza' => 'Consulenza','formazione' => 'Formazione',];
