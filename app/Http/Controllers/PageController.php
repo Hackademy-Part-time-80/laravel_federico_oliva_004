@@ -16,15 +16,25 @@ class PageController extends Controller
         return view('chi-sono');
     }
     public function servizi(){
-        $services = ["Ecommerce", "Gestionali", "Consulenza", "Formazione"];
+        $services = [
+    'ecommerce'  => 'Ecommerce',
+    'gestionali' => 'Gestionali',
+    'consulenza' => 'Consulenza',
+    'formazione' => 'Formazione',
+];
         return view('lista-servizi', ['servizi' => $services]);
     }
     public function show($servizio){
-        $services = ['ecommerce'  => 'Ecommerce','gestionali' => 'Gestionali','consulenza' => 'Consulenza','formazione' => 'Formazione',];
-        if (array_key_exists($servizio, $services)) {
-            return view('prodotti', ['servizio' => $services[$servizio]]);
-        } else {
-            abort(404);
-        }
+    $services = [
+        'ecommerce'  => 'Ecommerce',
+        'gestionali' => 'Gestionali',
+        'consulenza' => 'Consulenza',
+        'formazione' => 'Formazione',
+    ];
+    if (array_key_exists($servizio, $services)) {
+        return view('prodotti', ['servizio' => $services[$servizio]]);
+    } else {
+        abort(404);
     }
+}
 }
